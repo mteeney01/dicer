@@ -4429,7 +4429,7 @@
       }
     },
     "roller": {
-      "version": "git+https://github.com/mteeney01/roller.git#f08cb38e5ea2365420c5544a19a4956ad3937b54",
+      "version": "git+https://github.com/mteeney01/roller.git#74fa1aee808f7a5196461ba6cbfd8d0065d9c4f6",
       "from": "git+https://github.com/mteeney01/roller.git"
     },
     "safe-buffer": {
