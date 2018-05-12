@@ -26,7 +26,6 @@ export class Roller extends React.Component<RouteComponentProps<{}>, any> {
             <h1>Roller</h1>
             <div className='container-fluid'>
                 <div className='row'>
-                    <p>Dice</p>
                     <div className='col-sm-6 form-horizontal'>  
                         {Object.keys(DIE).map((f :string, i :number) => {
                             return (<RollerRow onRollClick={this.onRollClick} dice={f} key={i} />)})
