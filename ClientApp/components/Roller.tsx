@@ -12,6 +12,7 @@ export class Roller extends React.Component<RouteComponentProps<{}>, any> {
         let rolled = roll(amount, DIE[dice]);        
         let results = this.state.results;
         let result = {
+            amount: amount,
             dice: dice,
             rolled: rolled
         };
@@ -33,7 +34,7 @@ export class Roller extends React.Component<RouteComponentProps<{}>, any> {
                     </div>
                     <div className='col-sm-6 well'>
                         {this.state.results.map((r: any, i: number) => {
-                            return (<p key={i}>Rolled {r.dice}: {r.rolled.rolls.join(', ')} = {r.rolled.total}</p>);
+                            return (<p key={i}>Rolled {r.amount}{r.dice}: {r.rolled.rolls.join(', ')} = {r.rolled.total}</p>);
                         })}
                     </div>
                 </div>
